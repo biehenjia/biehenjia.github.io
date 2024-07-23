@@ -1,0 +1,155 @@
+.section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.popup-btn {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 380px;
+	height: 80px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: var(--pr-color);
+	text-decoration: none;
+	font-weight: 800;
+	border: 1px solid var(--pr-color);
+	transition: .8s var(--cubicbz);
+	z-index: 1;
+}
+
+.popup-btn::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: var(--pr-color);
+	transform: scaleX(0);
+	transform-origin: left;
+	will-change: transform;
+	z-index: -1;
+	transition: .8s var(--cubicbz);
+}
+
+.popup-btn:hover {
+	color: var(--second-color);
+}
+
+.popup-btn:hover::before {
+	transform: scaleX(1);
+}
+
+.popup {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	background: var(--pr-color);
+	z-index: 2;
+	transition: .4s;
+}
+
+.popup:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.popup__bl {
+	max-width: 800px;
+	width: 100%;
+}
+
+.popup__title {
+	font-size: 50px;
+}
+
+.popup__text {
+	font-size: 16px;
+	line-height: 1.4;
+	color: #393939;
+}
+
+.popup__close {
+	position: absolute;
+	padding: 2px 5px;
+	top: 40px;
+	right: 40px;
+	text-decoration: none;
+	transition: .8s var(--cubicbz);
+}
+
+.popup__close:hover {
+	background: var(--second-color);
+	transition-delay: .4s;
+}
+
+.popup__close-sp {
+	position: relative;
+	display: block;
+	font-size: 16px;
+	color: var(--second-color);
+	transition: .8s var(--cubicbz);
+	z-index: 2;
+}
+
+.popup__close-spb {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: var(--second-color);
+	will-change: transform;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: .8s var(--cubicbz);
+	z-index: 1;
+}
+
+.popup__close:hover .popup__close-sp {
+	color: var(--pr-color);
+}
+
+.popup__close:hover .popup__close-spb {
+	transform: scaleX(1);
+}
+
+.popup__close::before,
+.popup__close::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background: var(--second-color);
+	will-change: transform;
+	transition: .8s var(--cubicbz);
+	z-index: 1;
+}
+
+.popup__close:hover::before {
+	opacity: 1;
+	transform: rotate(45deg);
+	transition-delay: .3s;
+}
+
+.popup__close:hover::after {
+	opacity: 1;
+	transform: rotate(-45deg);
+	transition-delay: .3s;
+}
