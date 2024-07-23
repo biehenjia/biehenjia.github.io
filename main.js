@@ -5,10 +5,10 @@ $(function () {
 
 	'use strict';
 
-
-	//Lenis Smooth scroll
+	
+	
 	const lenis = new Lenis({
-		duration: 1.2
+		duration: 1.25
 	})
 
 	function raf(time) {
@@ -17,25 +17,21 @@ $(function () {
 	}
 	requestAnimationFrame(raf)
 
-	//Integration Lenis on GSAP ScrollTrigger
 	lenis.on('scroll', ScrollTrigger.update)
 
 	gsap.ticker.add((time) => {
 		lenis.raf(time * 1000)
 	})
 
-	//Create animation ScrollTrigger
 	function scrollTrig() {
 
 		gsap.registerPlugin(ScrollTrigger);
 
 		let gsapBl = $('.gsap__bl').width();
 
-		//Transform slider track
 		let gsapTrack = $('.gsap__track').width();
 		let scrollSliderTransform = gsapTrack - gsapBl
 
-		//Create ScrollTrigger
 		let scrollTween = gsap.to('.gsap__track', {
 			scrollTrigger: {
 				trigger: '.gsap_slider',
@@ -48,6 +44,8 @@ $(function () {
 			ease: 'none'
 		});
 
+		
+	
 		const gsapItem = gsap.utils.toArray('.gsap__item');
 		gsapItem.forEach((gsIt) => {
 

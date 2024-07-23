@@ -13,23 +13,120 @@
 
 <body>
 	<!-- div .wrapp -->
-	<div class="wrapp">
-		<!-- header .header -->
+	<div id="first" class="popup">
 
-		<header class="header">
-			<div class="content">
-				<h1 class="title">Parallax<span class="stroke">slider</span></h1>
-			</div>
-		</header>
+		<a href="#" class="popup__close">
+			<span class="popup__close-sp">close</span>
+			<span class="popup__close-spb"></span>
+		</a>
+		<div class="popup__bl">
+			<h1 class="popup__title">Hello. Popup Open</h1>
+			<p class="popup__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex reiciendis
+				cupiditate aspernatur assumenda quod? Dolorem a porro sint illo voluptas suscipit laborum
+				consectetur fugiat sunt veniam est sapiente possimus saepe earum officia, qui maiores voluptatum
+				beatae nisi soluta fugit harum accusantium, quia tempora? Praesentium doloremque quae minima a
+				libero earum accusantium natus necessitatibus sed repellat aspernatur architecto quam iusto hic,
+				repellendus perferendis vero dolorem ipsum deleniti. Quaerat vitae, nam soluta placeat ad alias
+				explicabo eum nesciunt qui aspernatur earum totam illum. Quos sequi dolore id impedit optio
+				veritatis et deleniti enim dolores, repudiandae nostrum cum rerum sapiente? Nulla, corporis
+				laudantium?</p>
+
+		</div>
+	</div>
+
+	<div id="second" class="popup">
+
+		<a href="#" class="popup__close">
+			<span class="popup__close-sp">close</span>
+			<span class="popup__close-spb"></span>
+		</a>
+		<div class="popup__bl">
+			<h1 class="popup__title">Hello. Popup Open</h1>
+			<p class="popup__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex reiciendis
+				cupiditate aspernatur assumenda quod? Dolorem a porro sint illo voluptas suscipit laborum
+				consectetur fugiat sunt veniam est sapiente possimus saepe earum officia, qui maiores voluptatum
+				beatae nisi soluta fugit harum accusantium, quia tempora? Praesentium doloremque quae minima a
+				libero earum accusantium natus necessitatibus sed repellat aspernatur architecto quam iusto hic,
+				repellendus perferendis vero dolorem ipsum deleniti. Quaerat vitae, nam soluta placeat ad alias
+				explicabo eum nesciunt qui aspernatur earum totam illum. Quos sequi dolore id impedit optio
+				veritatis et deleniti enim dolores, repudiandae nostrum cum rerum sapiente? Nulla, corporis
+				laudantium?</p>
+
+		</div>
+	</div>
+	
+	<div class="wrapp">
+
+		
+
+		
+
+
+
+
+
+		<!-- TITLE FOR  -->
+
+		
 
 		<!-- header .header END -->
 
 		<!-- main .main -->
 		<main class="main">
 
+
+			
+
+
 			<!-- section .section-slider -->
 			<section class="section-slider gsap_slider">
+				<header class="header">
+					<div class="content">
+						<h1 class="title">Parallax<span class="stroke">slider</span></h1>
+					</div>
+				</header>
 
+				<div id="first" class="popup content header">
+
+					<a href="#" class="popup__close">
+						<span class="popup__close-sp">close</span>
+						<span class="popup__close-spb"></span>
+					</a>
+					<div class="popup__bl">
+						<h1 class="popup__title">Hello. Popup Open</h1>
+						<p class="popup__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex reiciendis
+							cupiditate aspernatur assumenda quod? Dolorem a porro sint illo voluptas suscipit laborum
+							consectetur fugiat sunt veniam est sapiente possimus saepe earum officia, qui maiores voluptatum
+							beatae nisi soluta fugit harum accusantium, quia tempora? Praesentium doloremque quae minima a
+							libero earum accusantium natus necessitatibus sed repellat aspernatur architecto quam iusto hic,
+							repellendus perferendis vero dolorem ipsum deleniti. Quaerat vitae, nam soluta placeat ad alias
+							explicabo eum nesciunt qui aspernatur earum totam illum. Quos sequi dolore id impedit optio
+							veritatis et deleniti enim dolores, repudiandae nostrum cum rerum sapiente? Nulla, corporis
+							laudantium?</p>
+			
+					</div>
+				</div>
+			
+				<div id="second" class="popup content header">
+			
+					<a href="#" class="popup__close">
+						<span class="popup__close-sp">close</span>
+						<span class="popup__close-spb"></span>
+					</a>
+					<div class="popup__bl">
+						<h1 class="popup__title">Hello. Popup Open</h1>
+						<p class="popup__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex reiciendis
+							cupiditate aspernatur assumenda quod? Dolorem a porro sint illo voluptas suscipit laborum
+							consectetur fugiat sunt veniam est sapiente possimus saepe earum officia, qui maiores voluptatum
+							beatae nisi soluta fugit harum accusantium, quia tempora? Praesentium doloremque quae minima a
+							libero earum accusantium natus necessitatibus sed repellat aspernatur architecto quam iusto hic,
+							repellendus perferendis vero dolorem ipsum deleniti. Quaerat vitae, nam soluta placeat ad alias
+							explicabo eum nesciunt qui aspernatur earum totam illum. Quos sequi dolore id impedit optio
+							veritatis et deleniti enim dolores, repudiandae nostrum cum rerum sapiente? Nulla, corporis
+							laudantium?</p>
+			
+					</div>
+				</div>
 				<div class="content">
 
 					<div class="section__slider gsap_h">
@@ -46,7 +143,7 @@
 											<img src="img/bg.png" alt="1">
 										</span>
 										<div class="gsap__item-txt">
-											<span class="gsap__item-title">test</span>
+											<span class="gsap__item-title popup-btn">test</span>
 										</div>
 									</div>
 
@@ -55,7 +152,7 @@
 											<img src="img/ship1.png" alt="1">
 										</span>
 										<div class="gsap__item-txt">
-											<span class="gsap__item-title">test</span>
+											<a href = "#first" class="gsap__item-title popup-btn">test</a>
 										</div>
 									</div>
 
