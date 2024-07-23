@@ -32,6 +32,7 @@ background: black;
 .header {
 	padding: var(--indent2) 0;
 	padding-bottom: 30px;
+
 }
 
 .title {
@@ -42,7 +43,7 @@ background: black;
 	color: var(--pr-color);
 	text-transform: uppercase;
 	mix-blend-mode: difference;
-	z-index: 2;
+	z-index: 5;
 }
 
 .title .stroke {
