@@ -4,9 +4,9 @@
 	--second-color: #0a0a0a;
 	--color-n3: #26cf6c;
 	--cubicbz: cubic-bezier(.9, 0, .1, 1);
-	--fz-big: 90px;
-	--indent: 50px;
-	--indent2: 100px;
+	--fz-big: 10vh;
+	--indent: 4vw;
+	--indent2: 3vh;
 }
 
 * {
@@ -19,7 +19,7 @@
 }
 
 body {
-background: black;
+background: bisque;
 }
 
 .wrapp {
@@ -31,7 +31,7 @@ background: black;
 
 .header {
 	padding: var(--indent2) 0;
-	padding-bottom: 30px;
+	padding-bottom: var(--indent2) 0;
 
 }
 
@@ -49,7 +49,7 @@ background: black;
 .title .stroke {
 	display: block;
 	color: transparent;
-	-webkit-text-stroke: 1px var(--color-n3);
+	-webkit-text-stroke: 2px var(--color-n3);
 }
 
 .main {
@@ -60,6 +60,8 @@ background: black;
 	width: 100%;
 	height: auto;
 	padding: 0 var(--indent);
+	padding-bottom: var(--indent2);
+
 }
 
 .section-text {
@@ -100,19 +102,16 @@ p {
 .gsap__item {
 	position: relative;
 	flex: 0 0 auto;
-	width: 20vw;
-	height: 550px;
+	height: 50vh;
 	will-change: transform;
 	overflow: hidden;
+	aspect-ratio: auto 1/1.3;
 }
 
 .gsap__item+.gsap__item {
 	margin-left: var(--indent);
 }
 
-.gsap__item:first-child {
-	width: 25vw;
-}
 
 .gsap__item-img {
 	position: absolute;
@@ -134,7 +133,7 @@ p {
 	position: relative;
 	display: flex;
 	align-items: center;
-	left: 25%;
+	left: 3.5vw;
 	width: 50vw;
 	height: 100%;
 

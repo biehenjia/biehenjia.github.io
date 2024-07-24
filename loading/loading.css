@@ -6,13 +6,13 @@
 	top: 0;
 	left: 0;
 	pointer-events: none;
-	z-index: 9999;
-	transition: .3s;
+	z-index: 1;
+	transition: .5s;
 }
 
 .loader__item {
-	width: 5.555vw;
+	width: 500vw;
 	height: 100%;
-	background: linear-gradient(0deg, rgba(8, 25, 30, 1) 6%, rgba(70, 62, 40, 1) 78%, rgba(93, 76, 43, 1) 99%);
+    background: bisque;
 }
 

@@ -1,4 +1,4 @@
-import gsap from '../../node_modules/gsap/all.js'
+
 
 
 
@@ -26,5 +26,5 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
 
         loader();
-    }, 500);
+    }, 1000);
 });
